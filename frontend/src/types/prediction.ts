@@ -1,3 +1,22 @@
+export interface Restaurant {
+  id: number;
+  name: string;
+  lat: number;
+  lon: number;
+  cuisine: string;
+  avg_rating: number;
+  prep_capacity: number;
+}
+
+export interface Rider {
+  id: number;
+  lat: number;
+  lon: number;
+  vehicle_type: string;
+  completed_orders: number;
+  shift_hours: number;
+  current_load: number;
+}
 export interface PredictRequest {
   lat: number;
   lon: number;
