@@ -465,43 +465,13 @@ https://eta-prediction-ecru.vercel.app
 
 ---
 
-# 📸 Screenshots
 
-> Add screenshots here.
-
-Suggested screenshots:
-
-- Dashboard
-- Prediction Form
-- Prediction Result
-- Breakdown Cards
-- AI Assistant
-- Swagger API
-- Docker Containers
-
-Example:
-
-```
-docs/images/dashboard.png
-
-docs/images/result.png
-
-docs/images/chat.png
-```
-
----
 
 # 📜 License
 
 This project is licensed under the MIT License.
 
 ---
-
-<div align="center">
-
-⭐ If you found this project useful, consider giving it a star on GitHub!
-
-</div>
 
 
 # 📊 Dataset Analysis
@@ -1613,19 +1583,19 @@ The ETA Prediction Platform is deployed as a cloud-native application using Dock
 The project follows a full-stack deployment architecture:
 
 ```
-GitHub
+    GitHub
       │
       │
-      ├──────────────┐
-      │              │
-      ▼              ▼
- Render          Vercel
- Backend        Frontend
-      │              │
+      ├──────────────────┐
+      │                  │
+      ▼                  ▼
+    Render              Vercel
+    Backend            Frontend
+      │                  │
       └──── REST API ────┘
-             │
-             ▼
-     LightGBM Predictor
+                │
+                ▼
+        LightGBM Predictor
 ```
 
 ---
@@ -1832,15 +1802,11 @@ Backend deployment is hosted on Render.
 
 Deployment Steps
 
-1.
-
-Connect GitHub Repository
+1.Connect GitHub Repository
 
 ↓
 
-2.
-
-Choose Root Directory
+2.Choose Root Directory
 
 ```
 backend
@@ -1848,21 +1814,15 @@ backend
 
 ↓
 
-3.
-
-Docker Runtime
+3.Docker Runtime
 
 ↓
 
-4.
-
-Automatic Build
+4.Automatic Build
 
 ↓
 
-5.
-
-Deploy
+5.Deploy
 
 ---
 
@@ -1982,31 +1942,36 @@ No manual deployment is required after the initial setup.
                 Internet
 
                     │
-
                     ▼
 
         React Frontend (Vercel)
 
                     │
+                    ▼
 
           HTTPS REST API Calls
 
+                    │
                     ▼
 
         FastAPI Backend (Render)
 
                     │
+                    ▼
 
           Feature Engineering
 
+                    │
                     ▼
 
           LightGBM Prediction
 
                     │
+                    ▼
 
           AI Explanation Layer
 
+                    │
                     ▼
 
               JSON Response
@@ -2024,7 +1989,6 @@ No manual deployment is required after the initial setup.
 +------------------------+
 
             │
-
             ▼
 
 +------------------------+
@@ -2034,19 +1998,16 @@ No manual deployment is required after the initial setup.
 +------------------------+
 
       │            │
-
       ▼            ▼
 
 Prediction     AI Assistant
 
       │
-
       ▼
 
 LightGBM Model
 
       │
-
       ▼
 
 Prediction Response
@@ -2163,16 +2124,14 @@ Possible scaling strategy
                  Load Balancer
 
                       │
-
       ┌───────────────┼───────────────┐
-
+      │               │               │
       ▼               ▼               ▼
 
  FastAPI 1      FastAPI 2      FastAPI 3
 
       │               │               │
-
-      └────────── Shared ML Model ───────────┘
+      └────────── Shared ML Model ────┘
 ```
 
 ---
@@ -2469,176 +2428,6 @@ Future MLOps enhancements include:
 
 ---
 
-# 📷 Screenshots
-
-Include screenshots of the following pages.
-
-## Home Dashboard
-
-```
-docs/images/dashboard.png
-```
-
----
-
-## Prediction Form
-
-```
-docs/images/form.png
-```
-
----
-
-## Prediction Result
-
-```
-docs/images/result.png
-```
-
----
-
-## Breakdown Card
-
-```
-docs/images/breakdown.png
-```
-
----
-
-## AI Assistant
-
-```
-docs/images/chat.png
-```
-
----
-
-## Swagger Documentation
-
-```
-docs/images/swagger.png
-```
-
----
-
-## Docker Containers
-
-```
-docs/images/docker.png
-```
-
----
-
-# 🎥 Demo Video Script
-
-## Duration
-
-Approximately **3–5 minutes**
-
----
-
-### 1. Introduction (30 seconds)
-
-"Hello everyone.
-
-This project is an AI-powered ETA Prediction Platform built using FastAPI, LightGBM, React, and TypeScript. It predicts delivery times for food delivery services and provides AI-generated explanations for every prediction."
-
----
-
-### 2. Architecture (45 seconds)
-
-Explain:
-
-- React Frontend
-- FastAPI Backend
-- LightGBM Model
-- AI Assistant
-- Docker
-- Render
-- Vercel
-
----
-
-### 3. Frontend Demonstration (1 minute)
-
-Show:
-
-- Restaurant dropdown
-- Rider dropdown
-- Order form
-- Predict button
-
-Generate an ETA prediction.
-
----
-
-### 4. Prediction Explanation (45 seconds)
-
-Discuss:
-
-- ETA
-- Confidence Score
-- Breakdown Cards
-- Distance
-- Rider Experience
-- Restaurant Load
-
----
-
-### 5. AI Assistant (30 seconds)
-
-Ask questions such as:
-
-- Why is my ETA high?
-- How can delivery become faster?
-- Explain this prediction.
-
-Show AI-generated responses.
-
----
-
-### 6. Backend (30 seconds)
-
-Open Swagger:
-
-```
-/docs
-```
-
-Demonstrate:
-
-- /predict
-- /restaurants
-- /riders
-- /ai/query
-
----
-
-### 7. Deployment (30 seconds)
-
-Show:
-
-GitHub Repository
-
-↓
-
-Render Backend
-
-↓
-
-Vercel Frontend
-
-↓
-
-Docker Support
-
----
-
-### 8. Conclusion
-
-"This project demonstrates full-stack AI application development using modern deployment practices, machine learning, and cloud-native architecture."
-
----
 
 # ❓ Frequently Asked Questions
 
@@ -2721,56 +2510,6 @@ This project is licensed under the MIT License.
 
 ---
 
-# ✅ Submission Checklist
-
-## Source Code
-
-- [x] FastAPI Backend
-- [x] React + TypeScript Frontend
-- [x] LightGBM Model
-- [x] AI Assistant
-
----
-
-## Machine Learning
-
-- [x] Feature Engineering
-- [x] Model Serialization
-- [x] Evaluation Metrics
-- [x] Prediction API
-
----
-
-## Frontend
-
-- [x] Dashboard
-- [x] Dropdowns
-- [x] Prediction Form
-- [x] Breakdown Cards
-- [x] AI Chat
-
----
-
-## DevOps
-
-- [x] Docker
-- [x] Docker Compose
-- [x] Render Deployment
-- [x] Vercel Deployment
-- [x] CI/CD
-
----
-
-## Documentation
-
-- [x] Project Overview
-- [x] Architecture
-- [x] API Documentation
-- [x] Deployment Guide
-- [x] Future Scope
-- [x] README
-
----
 
 ## Live Links
 
