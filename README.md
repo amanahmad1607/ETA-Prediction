@@ -95,9 +95,11 @@ The system predicts delivery ETA using a LightGBM regression model trained on en
 Workflow:
 
 Restaurant Selection
+
 ↓
 
 Rider Selection
+
 ↓
 
 Feature Engineering
@@ -209,41 +211,45 @@ The integrated AI assistant can answer questions such as:
                     User
 
                       │
-
                       ▼
 
              React Frontend
           (TypeScript + Tailwind)
 
                       │
+                      ▼
              REST API Requests
-
+                      │
                       ▼
 
                FastAPI Backend
 
                       │
+                      ▼
 
           Feature Engineering
 
+                      │
                       ▼
 
           LightGBM ETA Predictor
 
                       │
+                      ▼
 
       Prediction + Confidence Score
 
                       │
+                      ▼
 
          AI Assistant Explanation
 
+                      │
                       ▼
 
             JSON Response
 
                       │
-
                       ▼
 
              React Dashboard
